@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+<script>
+    var str = "Tôi yêu ngôn ngữ lập trình Javascript"
+    var count = 0;
+    var countt = 0;
+    for (var i = 0; i< str.length; i++){
+        if (str[i] === "a"){
+            count ++;
+        }
+    }
+    document.write("chữ a xuất hiện " + count + " lần <br>")
+
+
+    var array = str.split("");
+    document.write("mảng được tách là "+ array +"<br>");
+
+    for (var j =0; j < str.length; j++){
+        if (str[j]!=" "){
+            countt ++
+        }
+    }
+    document.write("có tất cả "+ countt + " ký tự trong chuỗi <br>")
+
+    var txt = str.replace("Javascript","Typescript")
+    document.write("chuỗi được thay thế " + txt)
+</script>
+</body>
+</html>

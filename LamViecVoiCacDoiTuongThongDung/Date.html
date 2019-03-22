@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day</title>
+</head>
+<body>
+<script>
+    var now = new Date();
+    var birthday = new Date(1992, 12, 25)
+
+    var offset = now.getTime() - birthday.getTime();
+
+    var totalDays = Math.round(offset / 1000 / 60 / 60 / 24);
+    document.write("toi da song duoc "+ totalDays+" ngay <br>")
+
+    var totalHours = Math.round(offset / 1000 / 60 / 60);
+    document.write("toi da song duoc "+ totalHours+" gio <br>")
+
+    var totalMinutes = Math.round(offset / 1000 / 60);
+    document.write("toi da song duoc "+ totalMinutes+" phut <br>")
+
+    var totalSeconds = Math.round(offset / 1000);
+    document.write("toi da song duoc "+ totalSeconds+" giay <br>")
+
+</script>
+</body>
+</html>
